@@ -1,7 +1,7 @@
 import { Editor } from "./Modules/Editor";
 import { History } from "./Modules/History";
 
-export class Memento {
+export const Memento = class {
   constructor() {
     const editor = new Editor();
     const history = new History();
@@ -33,4 +33,4 @@ export class Memento {
 
     console.log(editor.getContent());
   }
-}
+};
