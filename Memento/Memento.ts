@@ -1,8 +1,7 @@
-"use strict"
-import Editor from "./Modules/Editor.js";
-import History from "./Modules/History.js";
+import { Editor } from "./Modules/Editor";
+import { History } from "./Modules/History";
 
-class Momento {
+export class Memento {
   constructor() {
     const editor = new Editor();
     const history = new History();
@@ -33,8 +32,5 @@ class Momento {
     editor.restore(history.pop());
 
     console.log(editor.getContent());
-
   }
 }
-
-new Momento();

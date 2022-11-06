@@ -1,18 +1,19 @@
-'use strict'
-import EditorState from "./EditorState.js";
+"use strict";
 
-class Editor {
-  #content;
+import { EditorState } from "./EditorState";
+
+export class Editor {
+  #content: string;
 
   constructor() {
-    this.#content = '';
+    this.#content = "";
   }
 
   getContent() {
     return this.#content;
   }
 
-  setContent(newValue) {
+  setContent(newValue: string) {
     this.#content = newValue;
   }
 
@@ -20,9 +21,7 @@ class Editor {
     return new EditorState(this.getContent());
   }
 
-  restore(state) {
+  restore(state: EditorState) {
     this.setContent(state.content);
   }
 }
-
-export default  Editor;
