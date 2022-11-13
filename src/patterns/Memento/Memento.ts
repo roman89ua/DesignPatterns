@@ -3,6 +3,7 @@ import { History } from "./Modules/History";
 
 export const Memento = class {
   constructor() {
+    console.log("MEMENTO");
     const editor = new Editor();
     const history = new History();
 

@@ -8,6 +8,8 @@ export class State {
   private size: string;
 
   constructor(color: string, size: string) {
+    
+    console.log("STATE")
     this.color = color;
     this.size = size;
     const canvas = new Canvas(new SelectTool());
