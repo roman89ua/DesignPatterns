@@ -10,6 +10,7 @@ import { Iterator } from "./patterns/Iterator/Iterator";
 import { Strategy } from "./patterns/Strategy/Strategy";
 import { TemplateMethod } from "./patterns/TemplateMethod/TemplateMethod";
 import {Command} from "./patterns/Command/Command";
+import {Observer} from "./patterns/Observer/Observer";
 
 confetti.create(document.getElementById("canvas") as HTMLCanvasElement, {
   resize: true,
@@ -22,3 +23,4 @@ const iterator = new Iterator();
 const strategy = new Strategy();
 const templateMethod = new TemplateMethod();
 const command = new Command();
+const observer = new Observer();
