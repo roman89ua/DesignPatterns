@@ -12,6 +12,7 @@ import { TemplateMethod } from "./patterns/Behavioral/TemplateMethod/TemplateMet
 import { Command } from "./patterns/Behavioral/Command/Command";
 import { Observer } from "./patterns/Behavioral/Observer/Observer";
 import { Mediator } from "./patterns/Behavioral/Mediator/Mediator";
+import {MediatorWithObserver} from "./patterns/Behavioral/MediatorWithObserver/MediatorWithObserver";
 
 confetti.create(document.getElementById("canvas") as HTMLCanvasElement, {
   resize: true,
@@ -26,3 +27,4 @@ new TemplateMethod();
 new Command();
 new Observer();
 new Mediator();
+new MediatorWithObserver()
