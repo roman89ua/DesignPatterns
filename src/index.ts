@@ -13,6 +13,7 @@ import { Command } from "./patterns/Behavioral/Command/Command";
 import { Observer } from "./patterns/Behavioral/Observer/Observer";
 import { Mediator } from "./patterns/Behavioral/Mediator/Mediator";
 import {MediatorWithObserver} from "./patterns/Behavioral/MediatorWithObserver/MediatorWithObserver";
+import {ChainOfResponsibility} from "./patterns/Behavioral/ChainOfResponsibility/ChainOfResponsibility";
 
 confetti.create(document.getElementById("canvas") as HTMLCanvasElement, {
   resize: true,
@@ -28,3 +29,4 @@ new Command();
 new Observer();
 new Mediator();
 new MediatorWithObserver()
+new ChainOfResponsibility();

@@ -1,21 +1,19 @@
 import {UIControl} from "./UIControl";
 
 export class ListBox  extends UIControl{
-  protected readonly _listOfSelection: string[] = [];
-  private _selection: string = '';
+  _selection: string ;
   
-  
-  getSelectionByIndex(index: number): string {
-    return this._listOfSelection[index] || "";
+  constructor() {
+    super();
+    this._selection = '';
   }
   
-  get selection(): string {
+  getSelection(): string {
     return this._selection;
   }
   
-  set selection(value: string) {
+  setSelection(value: string) {
     this._selection = value;
     this.notifyObservers();
-  
   }
 }
