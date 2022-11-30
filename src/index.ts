@@ -14,6 +14,7 @@ import { Observer } from "./patterns/Behavioral/Observer/Observer";
 import { Mediator } from "./patterns/Behavioral/Mediator/Mediator";
 import {MediatorWithObserver} from "./patterns/Behavioral/MediatorWithObserver/MediatorWithObserver";
 import {ChainOfResponsibility} from "./patterns/Behavioral/ChainOfResponsibility/ChainOfResponsibility";
+import {Visitor} from "./patterns/Behavioral/Visitor/Visitor";
 
 confetti.create(document.getElementById("canvas") as HTMLCanvasElement, {
   resize: true,
@@ -30,3 +31,4 @@ new Observer();
 new Mediator();
 new MediatorWithObserver()
 new ChainOfResponsibility();
+new Visitor();
