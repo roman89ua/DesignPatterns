@@ -1,8 +1,8 @@
 import type {IHtmlNode} from "../IHtmlNode";
+import type {IOperation} from "./Operations/IOperation";
 
 export class AnchorNode implements IHtmlNode{
-  
-  highlightNode(): void {
-    console.log("Highlight Anchor Tag")
+  execute(operation: IOperation): void {
+    operation.runAnchorNodeOperation(this);
   }
 }

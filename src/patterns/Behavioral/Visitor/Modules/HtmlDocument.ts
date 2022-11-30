@@ -1,4 +1,5 @@
 import type {IHtmlNode} from "./IHtmlNode";
+import type {IOperation} from "./Nodes/Operations/IOperation";
 
 export class HtmlDocument {
   private listOfNodes: IHtmlNode[];
@@ -11,7 +12,7 @@ export class HtmlDocument {
     this.listOfNodes.push(newNode);
   }
   
-  highlightAllTags() {
-    this.listOfNodes.forEach(node => node.highlightNode())
+  executeForAll(operation: IOperation) {
+    this.listOfNodes.forEach(node => node.execute(operation));
   }
 }

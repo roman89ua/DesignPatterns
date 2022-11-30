@@ -1,3 +1,5 @@
+import type {IOperation} from "./Nodes/Operations/IOperation";
+
 export interface IHtmlNode {
-  highlightNode: () => void;
+  execute(operation: IOperation): void;
 }

@@ -1,8 +1,8 @@
 import type {IHtmlNode} from "../IHtmlNode";
+import type {IOperation} from "./Operations/IOperation";
 
 export class HeadingNode implements IHtmlNode{
-  
-  highlightNode(): void {
-    console.log("Highlight Heading Tag")
+  execute(operation: IOperation): void {
+    operation.runHeadingOperation(this);
   }
 }
