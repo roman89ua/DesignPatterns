@@ -12,11 +12,14 @@ import { TemplateMethod } from "./patterns/Behavioral/TemplateMethod/TemplateMet
 import { Command } from "./patterns/Behavioral/Command/Command";
 import { Observer } from "./patterns/Behavioral/Observer/Observer";
 import { Mediator } from "./patterns/Behavioral/Mediator/Mediator";
-import {MediatorWithObserver} from "./patterns/Behavioral/MediatorWithObserver/MediatorWithObserver";
-import {ChainOfResponsibility} from "./patterns/Behavioral/ChainOfResponsibility/ChainOfResponsibility";
-import {Visitor} from "./patterns/Behavioral/Visitor/Visitor";
-import {Prototype} from "./patterns/Creational/Prototipe/Prototype";
+import { MediatorWithObserver } from "./patterns/Behavioral/MediatorWithObserver/MediatorWithObserver";
+import { ChainOfResponsibility } from "./patterns/Behavioral/ChainOfResponsibility/ChainOfResponsibility";
+import { Visitor } from "./patterns/Behavioral/Visitor/Visitor";
+import { Prototype } from "./patterns/Creational/Prototipe/Prototype";
 import { Singleton } from "./patterns/Creational/Singletoon/Singleton";
+import { FactoryMethod } from "./patterns/Creational/FactoryMethod/FactoryMethod";
+import { ChairFactory } from "./patterns/Creational/FactoryMethod/Modules/ChairFactory";
+import { SofaFactory } from "./patterns/Creational/FactoryMethod/Modules/SofaFactory";
 
 confetti.create(document.getElementById("canvas") as HTMLCanvasElement, {
   resize: true,
@@ -37,3 +40,5 @@ new Visitor();
 
 new Prototype();
 new Singleton();
+new FactoryMethod(new ChairFactory() /*new SofaFactory()*/);
+new FactoryMethod(/*new ChairFactory()*/ new SofaFactory());
