@@ -21,6 +21,7 @@ import { FactoryMethod } from "./patterns/Creational/FactoryMethod/FactoryMethod
 import { ChairFactory } from "./patterns/Creational/FactoryMethod/Modules/ChairFactory";
 import { SofaFactory } from "./patterns/Creational/FactoryMethod/Modules/SofaFactory";
 import { AbstractFactory } from "./patterns/Creational/AbstractFatory/AbstractFactory";
+import { Builder } from "./patterns/Creational/Builder/Builder";
 
 confetti.create(document.getElementById("canvas") as HTMLCanvasElement, {
   resize: true,
@@ -46,4 +47,5 @@ new Singleton();
 new FactoryMethod(new ChairFactory() /*new SofaFactory()*/);
 new FactoryMethod(/*new ChairFactory()*/ new SofaFactory());
 new AbstractFactory();
+new Builder();
 
