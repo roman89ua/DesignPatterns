@@ -3,7 +3,7 @@ import { Chair } from "./Chair";
 import type { IFurniture } from "./IFurniture";
 
 export class ChairFactory extends FurnitureFactory{
-  factory(): IFurniture {
+  factoryMethod(): IFurniture {
     return new Chair();
   }
 }
