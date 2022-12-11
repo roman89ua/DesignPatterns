@@ -20,12 +20,14 @@ import { Singleton } from "./patterns/Creational/Singletoon/Singleton";
 import { FactoryMethod } from "./patterns/Creational/FactoryMethod/FactoryMethod";
 import { ChairFactory } from "./patterns/Creational/FactoryMethod/Modules/ChairFactory";
 import { SofaFactory } from "./patterns/Creational/FactoryMethod/Modules/SofaFactory";
+import { AbstractFactory } from "./patterns/Creational/AbstractFatory/AbstractFactory";
 
 confetti.create(document.getElementById("canvas") as HTMLCanvasElement, {
   resize: true,
   useWorker: true,
 })({ particleCount: 200, spread: 200 });
 
+//Behavioral Design Patterns
 new Memento();
 new State("Red", "1px");
 new Iterator();
@@ -38,7 +40,10 @@ new MediatorWithObserver()
 new ChainOfResponsibility();
 new Visitor();
 
+// Creational Design Patterns
 new Prototype();
 new Singleton();
 new FactoryMethod(new ChairFactory() /*new SofaFactory()*/);
 new FactoryMethod(/*new ChairFactory()*/ new SofaFactory());
+new AbstractFactory();
+
