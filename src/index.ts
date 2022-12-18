@@ -50,5 +50,4 @@ new AbstractFactory();
 new Builder();
 
 console.log("B");
-console.log("C");
 
