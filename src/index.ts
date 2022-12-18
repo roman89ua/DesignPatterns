@@ -48,6 +48,3 @@ new FactoryMethod(new ChairFactory() /*new SofaFactory()*/);
 new FactoryMethod(/*new ChairFactory()*/ new SofaFactory());
 new AbstractFactory();
 new Builder();
-
-console.log("B");
-
