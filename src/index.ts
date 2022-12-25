@@ -23,6 +23,7 @@ import { SofaFactory } from './patterns/Creational/FactoryMethod/Modules/SofaFac
 import { AbstractFactory } from './patterns/Creational/AbstractFatory/AbstractFactory';
 import { Builder } from './patterns/Creational/Builder/Builder';
 import { Composite } from './patterns/Structural/Copmposite/Composite';
+import { Adapter } from './patterns/Structural/Adapter/Adapter';
 
 confetti.create(document.getElementById('canvas') as HTMLCanvasElement, {
   resize: true,
@@ -51,4 +52,5 @@ new AbstractFactory();
 new Builder();
 
 // Structural Design Patterns
+new Adapter();
 new Composite();
