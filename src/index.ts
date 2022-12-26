@@ -1,8 +1,3 @@
-/**
- * This file is just a silly example to show everything working in the browser.
- * When you're ready to start on your site, clear the file. Happy hacking!
- **/
-
 import confetti from 'canvas-confetti';
 import { Memento } from './patterns/Behavioral/Memento/Memento';
 import { State } from './patterns/Behavioral/State/State';
@@ -24,6 +19,7 @@ import { AbstractFactory } from './patterns/Creational/AbstractFatory/AbstractFa
 import { Builder } from './patterns/Creational/Builder/Builder';
 import { Composite } from './patterns/Structural/Copmposite/Composite';
 import { Adapter } from './patterns/Structural/Adapter/Adapter';
+import { DecoratorMain } from './patterns/Structural/Decorator/DecoratorMain';
 
 confetti.create(document.getElementById('canvas') as HTMLCanvasElement, {
   resize: true,
@@ -54,3 +50,4 @@ new Builder();
 // Structural Design Patterns
 new Adapter();
 new Composite();
+new DecoratorMain();
