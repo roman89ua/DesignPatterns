@@ -20,6 +20,7 @@ import { Builder } from './patterns/Creational/Builder/Builder';
 import { Composite } from './patterns/Structural/Copmposite/Composite';
 import { Adapter } from './patterns/Structural/Adapter/Adapter';
 import { DecoratorMain } from './patterns/Structural/Decorator/DecoratorMain';
+import { Facade } from './patterns/Structural/Facade/Facade';
 
 confetti.create(document.getElementById('canvas') as HTMLCanvasElement, {
   resize: true,
@@ -51,3 +52,4 @@ new Builder();
 new Adapter();
 new Composite();
 new DecoratorMain();
+new Facade();
