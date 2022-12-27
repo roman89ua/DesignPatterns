@@ -21,6 +21,7 @@ import { Composite } from './patterns/Structural/Copmposite/Composite';
 import { Adapter } from './patterns/Structural/Adapter/Adapter';
 import { DecoratorMain } from './patterns/Structural/Decorator/DecoratorMain';
 import { Facade } from './patterns/Structural/Facade/Facade';
+import { FlyWeight } from './patterns/Structural/FlyWeight/FlyWeight';
 
 confetti.create(document.getElementById('canvas') as HTMLCanvasElement, {
   resize: true,
@@ -53,3 +54,4 @@ new Adapter();
 new Composite();
 new DecoratorMain();
 new Facade();
+new FlyWeight();
