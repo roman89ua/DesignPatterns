@@ -23,6 +23,7 @@ import { DecoratorMain } from './patterns/Structural/Decorator/DecoratorMain';
 import { Facade } from './patterns/Structural/Facade/Facade';
 import { FlyWeight } from './patterns/Structural/FlyWeight/FlyWeight';
 import { Bridge } from './patterns/Structural/Bridge/Bridge';
+import { Proxy } from './patterns/Structural/Proxy/Proxy';
 
 confetti.create(document.getElementById('canvas') as HTMLCanvasElement, {
   resize: true,
@@ -57,3 +58,4 @@ new Composite();
 new DecoratorMain();
 new Facade();
 new FlyWeight();
+new Proxy();
