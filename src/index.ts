@@ -22,6 +22,7 @@ import { Adapter } from './patterns/Structural/Adapter/Adapter';
 import { DecoratorMain } from './patterns/Structural/Decorator/DecoratorMain';
 import { Facade } from './patterns/Structural/Facade/Facade';
 import { FlyWeight } from './patterns/Structural/FlyWeight/FlyWeight';
+import { Bridge } from './patterns/Structural/Bridge/Bridge';
 
 confetti.create(document.getElementById('canvas') as HTMLCanvasElement, {
   resize: true,
@@ -51,6 +52,7 @@ new Builder();
 
 // Structural Design Patterns
 new Adapter();
+new Bridge();
 new Composite();
 new DecoratorMain();
 new Facade();
